@@ -12,7 +12,7 @@ function Get(props) {
     setModalIsOpen(false);
   }
 
-  //get request
+  
   function get_shit() {
     setLoading(true)
     axios
@@ -25,7 +25,7 @@ function Get(props) {
       setLoading(false)
     }
     
-    //document.getElementById("response").innerHTML = x;
+    
 
   }
 
