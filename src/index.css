@@ -1,0 +1,77 @@
+#title h1 {
+  color: rgb(168, 122, 168);
+  text-align: center;
+  text-decoration: underline;
+}
+
+#get,
+#put,
+#post,
+#patch,#delete {
+  width: 20%;
+  height: 40px;
+  border-style: hidden;
+  background-color: black;
+  color: white;
+  font-size: 110%;
+  margin-top: 15%;
+  display: inline-block;
+  float: left;
+  transition: 0.7s;
+  margin-left: -1.1%;
+}
+#get:hover,
+#put:hover,
+#post:hover,
+#patch:hover {
+  background-color: rgb(168, 122, 168);
+  color: white;
+  cursor: pointer;
+}
+
+
+#put,
+#post,
+#delete,
+#patch {
+  margin-left: 1%;
+}
+#delete {
+  margin-top: -6.5%;
+  margin-left: 83%;
+}
+#response {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgb(168, 122, 168);
+  border-style: hidden;
+  text-align: center;
+}
+
+#close {
+  width: 40%;
+  height: 40px;
+  border-style: hidden;
+  background-color: black;
+  color: white;
+  font-size: 110%;
+  margin-top: 10%;
+  transition: 0.7s;
+  margin-left: 30%;
+}
+#close:hover {
+  background-color: rgb(168, 122, 168);
+  color: white;
+  cursor: pointer;
+}
+#modal p {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+#modal h1 {
+  text-align: center;
+}
