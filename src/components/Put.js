@@ -18,7 +18,7 @@ function Put() {
   function put_shit() {
     setLoading(true)
     axios
-      .put("https://jsonplaceholder.typicode.com/users?_limit=2/1",{
+      .put("https://jsonplaceholder.typicode.com/users/2",{
         name : window.prompt("enter name"),
         city : window.prompt("enter city")
       })

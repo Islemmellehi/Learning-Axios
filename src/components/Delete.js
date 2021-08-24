@@ -18,7 +18,7 @@ function Delete() {
   function delete_shit() {
     setLoading(true)
     axios
-      .delete("https://jsonplaceholder.typicode.com/users?_limit=2")
+      .delete("https://jsonplaceholder.typicode.com/users/2")
       .then((res) => Showshit(res));
     function Showshit(res) {
       //variable containing output

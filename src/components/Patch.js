@@ -18,7 +18,7 @@ function Patch() {
   function patch_shit() {
     setLoading(true)
     axios
-      .patch("https://jsonplaceholder.typicode.com/users?_limit=2/1",{
+      .patch("https://jsonplaceholder.typicode.com/users/2",{
         name : window.prompt("enter name"),
         city : window.prompt("enter city")
       })

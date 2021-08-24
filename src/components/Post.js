@@ -18,7 +18,7 @@ function Post() {
   function post_shit() {
     setLoading(true)
     axios
-      .post("https://jsonplaceholder.typicode.com/users?_limit=2/1",{
+      .post("https://jsonplaceholder.typicode.com/users",{
         name : window.prompt("enter name"),
         city : window.prompt("enter city")
       })

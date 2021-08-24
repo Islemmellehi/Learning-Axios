@@ -16,7 +16,7 @@ function Get(props) {
   function get_shit() {
     setLoading(true) 
     axios
-      .get("https://jsonplaceholder.typicode.com/users?_limit=2")
+      .get("https://jsonplaceholder.typicode.com/todos")
       .then((res) => Showshit(res));
     function Showshit(res) {
       //variable containing output
