@@ -11,12 +11,12 @@ function Get(props) {
     setModalIsOpen(false);
   }
 
-  function get_shit() {
+  function get() {
     setLoading(true);
     axios
       .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
-      .then((res) => Showshit(res));
-    function Showshit(res) {
+      .then((res) => Show(res));
+    function Show(res) {
       //variable containing output
       setX(JSON.stringify(res.data, null, 2));
       setModalIsOpen(true);
@@ -30,7 +30,7 @@ function Get(props) {
         {loading ? (
           <p>Loading..</p>
         ) : (
-          <button onClick={get_shit} id="get">
+          <button onClick={get} id="get">
             Get Data
           </button>
         )}

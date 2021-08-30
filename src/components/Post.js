@@ -15,15 +15,15 @@ function Post() {
   }
 
   //post request
-  function post_shit() {
+  function post() {
     setLoading(true)
     axios
       .post("https://jsonplaceholder.typicode.com/users",{
         name : window.prompt("enter name"),
         city : window.prompt("enter city")
       })
-      .then((res) => Showshit(res));
-    function Showshit(res) {
+      .then((res) => Show(res));
+    function Show(res) {
       //variable containing output
       setX(JSON.stringify(res.data, null, 2))
       setModalIsOpen(true);
@@ -36,7 +36,7 @@ function Post() {
   return (
     <div>
       <div>
-        {loading ? <p id ="loading">Loading..</p> :<button onClick={post_shit} id="post">Post Data</button>}
+        {loading ? <p id ="loading">Loading..</p> :<button onClick={post} id="post">Post Data</button>}
         <p id="response"></p>
       </div>
       <div id="dumbfuckmodal">

@@ -15,12 +15,12 @@ function Delete() {
   }
 
   //post request
-  function delete_shit() {
+  function delete_data() {
     setLoading(true)
     axios
       .delete("https://jsonplaceholder.typicode.com/users/2")
-      .then((res) => Showshit(res));
-    function Showshit(res) {
+      .then((res) => Show(res));
+    function Show(res) {
       //variable containing output
       setX(JSON.stringify(res.data, null, 2))
       setModalIsOpen(true);
@@ -33,7 +33,7 @@ function Delete() {
   return (
     <div>
       <div>
-        {loading ? <p id ="loading">Loading..</p> :<button onClick={delete_shit} id="delete">Delete Data</button>}
+        {loading ? <p id ="loading">Loading..</p> :<button onClick={delete_data} id="delete">Delete Data</button>}
         <p id="response"></p>
       </div>
       <div id="dumbfuckmodal">
